@@ -1,13 +1,31 @@
-# My project is a thermometer and humidity meter made on Arduino R3. 
+# My project is a thermometer and humidity
+
 # It works in Polish, English, and German. 
 The selection is made by pressing one of three buttons. 
+
 Measurements are taken using a DHT11 sensor. 
+
 The result is displayed on a 16x2 LCD without I2C, and the display brightness is adjusted using a potentiometer.
+
+# Device
+
+Arduino Uno R3
+
+16x2 LCD without I2C
+
+Potentiometer
+
+Resistor
+
+DHT11 sensor
 
 # CODE 
 #include <Arduino.h>
+
 #include <LiquidCrystal.h>
+
 #include <DHT.h>
+
 #include <OneWire.h>
 
 #define DHTPIN 13
